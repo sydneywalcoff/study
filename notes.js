@@ -1,13 +1,4 @@
-// search algorithms
-
-// sorting algorithms
-
-// computational algorithms
-
-// collection algorithms
-
-
-// Euclid's Algorithm
+// Euclid's Algorithm - computational
 const findGCD = (a,b) => {
     while(b != 0) {
         const rem = a % b;
@@ -19,3 +10,5 @@ const findGCD = (a,b) => {
 
 console.log(findGCD(20, 8)); /* should be 4 */
 console.log(findGCD(60, 96)); /* should be 12 */
+
+// 

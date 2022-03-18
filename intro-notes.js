@@ -10,5 +10,3 @@ const findGCD = (a,b) => {
 
 console.log(findGCD(20, 8)); /* should be 4 */
 console.log(findGCD(60, 96)); /* should be 12 */
-
-// 

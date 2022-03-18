@@ -13,10 +13,9 @@ const findGCD = (a,b) => {
         const rem = a % b;
         a = b;
         b = rem;
-        if(rem == 0) return a;
     }
+    return a;
 };
 
-
 console.log(findGCD(20, 8)); /* should be 4 */
-console.log(findGCD(60, 96)); /* should be 4 */
+console.log(findGCD(60, 96)); /* should be 12 */

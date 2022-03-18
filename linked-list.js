@@ -50,9 +50,16 @@ LinkedList.prototype.addAtIndex = function(index, val) {
     node.next = temp;
 }
 
+LinkedList.prototype.deleteAtIndex = function(index) {
+    const list = this;
+    let counter = 0;
+    let curr = list.head;
+}
+
 const obj = new LinkedList();
 obj.addAtHead(1);
 obj.addAtTail(3);
 obj.addAtIndex(1,2);
+obj.deleteAtIndex(1)
 // console.log(obj)
 

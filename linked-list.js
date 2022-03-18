@@ -36,7 +36,23 @@ LinkedList.prototype.addAtTail = function(val) {
     list.length++;
 }
 
+LinkedList.prototype.addAtIndex = function(index, val) {
+    const list = this;
+    const node = new ListNode(val);
+    let counter = 0;
+    let curr = list.head;
+    while (counter !== index -1) {
+        curr = curr.next;
+        counter++;
+    }
+    let temp = curr.next;
+    curr.next = node;
+    node.next = temp;
+}
+
 const obj = new LinkedList();
 obj.addAtHead(1);
 obj.addAtTail(3);
-console.log(obj)
+obj.addAtIndex(1,2);
+// console.log(obj)
+

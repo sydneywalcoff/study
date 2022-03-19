@@ -65,6 +65,17 @@ LinkedList.prototype.deleteAtIndex = function(index) {
     list.length--;
 }
 
+LinkedList.prototype.get = function(index) {
+    const list = this;
+    let counter = 0;
+    let curr = list.head;
+    while(counter !== index) {
+        curr = curr.next;
+        counter++;
+    }
+    return curr.val;
+}
+
 const obj = new LinkedList();
 obj.addAtHead(1);
 obj.addAtTail(3);

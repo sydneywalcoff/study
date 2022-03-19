@@ -48,12 +48,21 @@ LinkedList.prototype.addAtIndex = function(index, val) {
     let temp = curr.next;
     curr.next = node;
     node.next = temp;
+    list.length++;
 }
 
 LinkedList.prototype.deleteAtIndex = function(index) {
     const list = this;
     let counter = 0;
     let curr = list.head;
+    let temp;
+    while(counter !== index-1) {
+        curr = curr.next;
+        counter++;
+    }
+    temp = curr.next.next
+    curr.next = temp;
+    list.length--;
 }
 
 const obj = new LinkedList();
@@ -61,5 +70,5 @@ obj.addAtHead(1);
 obj.addAtTail(3);
 obj.addAtIndex(1,2);
 obj.deleteAtIndex(1)
-// console.log(obj)
+console.log(obj)
 

@@ -10,3 +10,9 @@ data_science_topics = ["Machine Learning", "SQL", "Pandas", "Algorithms", "Stati
 data_science_topics.pop()
 data_science_topics.pop(3)
 # print(data_science_topics)
+
+# Consecutive Lists: Range
+number_list = range(9)
+
+zero_to_seven = range(8)
+# print(list(zero_to_seven))

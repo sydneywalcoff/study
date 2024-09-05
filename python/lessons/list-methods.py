@@ -29,3 +29,13 @@ long_list_len = len(long_list)
 
 big_range_length = len(big_range)
 # print(big_range_length)
+
+# slicing lists
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+beginning = suitcase[0:2]
+middle = suitcase[2:4]
+
+last_two_elements = suitcase[-2:]
+slice_off_last_three = suitcase[:-3]
+# print(slice_off_last_three)

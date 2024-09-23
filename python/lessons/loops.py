@@ -61,10 +61,30 @@ for store in sales_data:
     for scoop in store:
         scoops_sold += scoop
 
-print(scoops_sold)
+# print(scoops_sold)
 
 
 # list comprehensions
 grades = [90, 88, 62, 76, 74, 89, 48, 57]
 scaled_grades = [score + 10 for score in grades]
-print(scaled_grades)
+# print(scaled_grades)
+
+# list comprehensions: conditionals
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+
+can_ride_coaster = [height for height in heights if height > 161]
+print(can_ride_coaster)
+
+
+# review
+single_digits = range(0,10)
+squares = []
+
+for digit in single_digits:
+  print(digit)
+  squares.append(digit**2)
+
+print(squares)
+
+cubes = [ digit**3 for digit in single_digits]
+print(cubes)

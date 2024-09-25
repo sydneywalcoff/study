@@ -33,3 +33,19 @@ oscar_winners["Best Picture"] = "Moonlight"
 drinks = ["espresso", "chai", "decaf", "drip"]
 caffeine = [64, 40, 0, 120]
 
+zipped_drinks = zip(drinks, caffeine)
+
+drinks_to_caffeine = {key:value for key,value in zipped_drinks}
+# print(drinks_to_caffeine)
+
+# review
+songs = ["Like a Rolling Stone", "Satisfaction", "Imagine", "What's Going On", "Respect", "Good Vibrations"]
+playcounts = [78, 29, 44, 21, 89, 5]
+
+plays = {key:value for key,value in zip(songs, playcounts)}
+# print(plays)
+plays["Purple Haze"] = 1
+plays["Respect"]+= 5
+
+library = {"The Best Songs": plays, "Sunday Feelings" : {}}
+print(library)

@@ -81,3 +81,10 @@ lessons = num_exercises.keys()
 # print(users)
 # print(lessons)
 
+# get all values
+num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
+total_exercises = 0
+for ex in num_exercises.values():
+  total_exercises += ex
+# print(total_exercises)
+

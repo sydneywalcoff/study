@@ -117,6 +117,49 @@ medium_pizza2 = Circle2(12)
 teaching_table2 = Circle2(36)
 round_room2 = Circle2(11460)
 
-print(medium_pizza2)
-print(teaching_table2)
-print(round_room2)
+# print(medium_pizza2)
+# print(teaching_table2)
+# print(round_room2)
+
+
+# Review
+class Student:
+  def __init__(self, name, year):
+    self.name = name
+    self.year = year
+    self.grades = []
+    
+  def add_grade(self, grade):
+    if(type(grade) is Grade):
+      self.grades.append(grade)
+      
+  def get_average(self):
+    grade_len = len(self.grades)
+    if(grade_len == 0):
+      return 'No scores to average'
+    total = 0
+    for grade in self.grades:
+      total += grade.score
+    return total / grade_len
+
+roger = Student("Roger van der Weyden", 10)
+sandro = Student("Sandro Botticelli", 12)
+pieter = Student("Pieter Bruegel the Elder", 8)
+
+class Grade:
+  minimum_passing = 65
+
+  def __init__(self, score): 
+    self.score = score
+    
+  def is_passing(self):
+    return self.score >= 65
+
+
+pieter.add_grade(Grade(100))
+pieter.add_grade(Grade(77))
+pieter.add_grade(Grade(82))
+pieter.add_grade(Grade(65))
+pieter.add_grade(Grade(45))
+
+print(pieter.get_average())

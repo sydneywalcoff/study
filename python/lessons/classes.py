@@ -71,7 +71,7 @@ for element in can_we_count_it:
 class Circle:
   pi = 3.14
   def __init__(self, diameter):
-    print("Creating circle with diameter {d}".format(d=diameter))
+    # print("Creating circle with diameter {d}".format(d=diameter))
     # Add assignment for self.radius here:
     self.radius = diameter/2
   def circumference(self):
@@ -97,3 +97,26 @@ def this_function_is_an_object():
 # print(dir(this_function_is_an_object)) 
 
 # String representation
+
+class Circle2:
+  pi = 3.14
+  
+  def __init__(self, diameter):
+    self.radius = diameter / 2
+  
+  def area(self):
+    return self.pi * self.radius ** 2
+  
+  def circumference(self):
+    return self.pi * 2 * self.radius
+  
+  def __repr__(self):
+    return 'Circle with radius ' + str(self.radius)
+  
+medium_pizza2 = Circle2(12)
+teaching_table2 = Circle2(36)
+round_room2 = Circle2(11460)
+
+print(medium_pizza2)
+print(teaching_table2)
+print(round_room2)

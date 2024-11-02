@@ -16,19 +16,19 @@ facade_1_type = type(facade_1)
 
 # class variables
 class Grade:
-    minimum_passing = 65
+  minimum_passing = 65
 
 # methods
 class Rules:
-    def washing_brushes(self):
-        return "Point bristles towards the basin while washing your brushes."
+  def washing_brushes(self):
+      return "Point bristles towards the basin while washing your brushes."
 
 # methods with arguments
 class Circle:
-    pi = 3.14
-    
-    def area(self, radius):
-        return self.pi * radius ** 2
+  pi = 3.14
+  
+  def area(self, radius):
+      return self.pi * radius ** 2
 
 circle = Circle()
 pizza_area = circle.area((12/2))
@@ -41,7 +41,8 @@ round_room_area = circle.area((11460/2))
 class Circle1:
   pi = 3.14
   def __init__(self, diameter):
-    print("New circle with diameter: "+ str(diameter))
+    # print("New circle with diameter: "+ str(diameter))
+    pass # added to be able to comment out print statement
 
 # teaching_table = Circle(36) # prints New circle with diameter: 36
 
